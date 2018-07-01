@@ -12,13 +12,13 @@ public class Settings {
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //LINES-------------------------------------------------------
-        JTextField linField = new JTextField("9", 3);
+        JTextField linField = new JTextField("5", 3);
         JLabel linLabel = new JLabel("Number of lines:       ");
         JPanel linPanel = new JPanel();
         linPanel.add(linLabel); linPanel.add(linField);
 
         //COLUMNS-----------------------------------------------------
-        JTextField colField = new JTextField("8", 3);
+        JTextField colField = new JTextField("5", 3);
         JLabel colLabel = new JLabel("Number of columns:  ");
         JPanel colPanel = new JPanel();
         colPanel.add(colLabel); colPanel.add(colField);
