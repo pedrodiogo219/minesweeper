@@ -13,15 +13,10 @@ public class Game {
 
         b = new ButtonTable(lin, col, bombs);
 
-
-
-
-
         JFrame window = new JFrame("Minesweeper");
 
         JPanel windowLayout = new JPanel(new BorderLayout());
 
-        JLabel title = new JLabel("Good Luck");
         JPanel buttonPanel = new JPanel(new GridLayout(lin, col));
 
         for(int i=1; i<=lin; i++){
@@ -30,7 +25,7 @@ public class Game {
             }
         }
 
-        windowLayout.add(title, BorderLayout.NORTH);
+        windowLayout.add(b.getImagePanel(), BorderLayout.NORTH);
         windowLayout.add(buttonPanel, BorderLayout.CENTER);
         windowLayout.add(b.getEndPanel(), BorderLayout.SOUTH);
 
